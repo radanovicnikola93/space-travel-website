@@ -1,0 +1,32 @@
+@mixin gap($gap: 1rem) {
+    gap: $gap;
+}
+
+.flex {
+    display: flex;
+    @include gap();
+}
+
+.grid {
+    display: grid;
+    @include gap();
+}
+
+.container {
+    padding-inline: 2em; // modern padding declaration -> padding left and right
+    margin-inline: auto; // margin left and right
+    max-width: 80rem;
+}
+
+// screent reader only
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: no-wrap; // added line
+    border: 0;
+}
