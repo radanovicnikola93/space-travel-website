@@ -10,6 +10,10 @@
     @include gap();
 }
 
+.flex-grow {
+    flex-grow: 1;
+}
+
 .grid {
     display: grid;
     @include gap();

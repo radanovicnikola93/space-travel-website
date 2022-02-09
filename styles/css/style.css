@@ -65,6 +65,10 @@ select {
   gap: 1rem;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
