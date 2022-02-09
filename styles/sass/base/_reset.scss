@@ -1,4 +1,6 @@
 // CSS RESET
+@import '../variables/typography';
+@import '../variables/colors';
 
 // Box sizing
 * {
@@ -25,6 +27,10 @@ picture {
 
 // Set up the body 
 body {
+    font-family: $ff-sans-normal;
+    font-size: $fs-400;
+    color: $clr-white;
+    background-color: $clr-dark;
     line-height: 1.5;
     min-height: 100vh;
 }
