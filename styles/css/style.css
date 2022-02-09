@@ -1,101 +1,17 @@
-* {
-  box-sizing: border-box;
-}
-*::before, *::after {
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 9 | @import "./variables/typhograpy";
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles/sass/main.scss 9:9  root stylesheet */
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure,
-picture {
-  margin: 0;
-}
-
-body {
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
-img,
-picture {
-  max-width: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 9 \2502  @import \"./variables/typhograpy\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/sass/main.scss 9:9  root stylesheet";
 }
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-*::after,
-*::before {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.container {
-  padding-inline: 2em;
-  margin-inline: auto;
-  max-width: 80rem;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: no-wrap;
-  border: 0;
-}
-
-.bg-dark {
-  background-color: #0c0e18;
-}
-
-.bg-light {
-  background-color: #d2d8f9;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.text-dark {
-  color: #0c0e18;
-}
-
-.text-light {
-  color: #d2d8f9;
-}
-
-.text-white {
-  color: white;
-}
-
-/*# sourceMappingURL=style.css.map */
