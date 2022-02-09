@@ -1,0 +1,28 @@
+{
+  "name": "space-travel-website",
+  "version": "1.0.0",
+  "description": "Building a space travel website by creating a design system with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radanovicnikola93/space-travel-website.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "html",
+    "space-travel"
+  ],
+  "author": "Nikola Radanovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radanovicnikola93/space-travel-website/issues"
+  },
+  "homepage": "https://github.com/radanovicnikola93/space-travel-website#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
