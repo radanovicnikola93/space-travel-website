@@ -13,3 +13,8 @@ $fs-200: 0.875rem;
 $ff-serif: "Bellefair", serif;
 $ff-sans-cond: "Barlow Condensed", sans-serif;
 $ff-sans-normal: "Barlow", sans-serif;
+
+// letter spacing
+@mixin letter-spacing($spacing) {
+    letter-spacing: $spacing;
+}

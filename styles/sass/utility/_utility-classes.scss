@@ -1,4 +1,5 @@
 @import '../variables/colors'; // import color variables
+@import '../variables/typography'; // import typography variables
 
 @mixin gap($gap: 1rem) {
     gap: $gap;
@@ -33,26 +34,51 @@
     border: 0;
 }
 
+// *********************************************************
+// COLORS
+// *********************************************************
+
+
 // backgrounds
-.bg-dark {
-    background-color: hsl($clr-dark);
-}
-.bg-light {
-    background-color: hsl($clr-light-blue);
-}
-.bg-white {
-    background-color: hsl($clr-white);
-}
+.bg-dark { background-color: hsl($clr-dark); }
+.bg-light { background-color: hsl($clr-light-blue); }
+.bg-white { background-color: hsl($clr-white); }
 
 // text
-.text-dark {
-    color: hsl($clr-dark);
-}
+.text-dark { color: hsl($clr-dark); }
+.text-light { color: hsl($clr-light-blue); }
+.text-white { color: hsl($clr-white); }
 
-.text-light {
-    color: hsl($clr-light-blue);
-}
+// *********************************************************
+// TYPOGRAPHY
+// *********************************************************
 
-.text-white {
-    color: hsl($clr-white);
+// font family
+.ff-serif { font-family: $ff-serif; }
+.ff-sans-cond { font-family: $ff-sans-cond; }
+.ff-sans-normal { font-family: $ff-sans-normal; }
+
+// letter spacing
+.letter-spacing-1 { @include letter-spacing(4.75px); }
+.letter-spacing-1 { @include letter-spacing(2.7px); }
+.letter-spacing-1 { @include letter-spacing(2.35px); }
+
+// uppercase
+.uppercase { text-transform: uppercase; }
+
+// font size
+.fs-900 { font-size: $fs-900; }
+.fs-800 { font-size: $fs-800; }
+.fs-700 { font-size: $fs-700; }
+.fs-600 { font-size: $fs-600; }
+.fs-500 { font-size: $fs-500; }
+.fs-400 { font-size: $fs-400; }
+.fs-300 { font-size: $fs-300; }
+.fs-200 { font-size: $fs-200; }
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
 }
