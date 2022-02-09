@@ -1,7 +1,9 @@
+@import '../variables/colors'; // import color variables
+
 @mixin gap($gap: 1rem) {
     gap: $gap;
 }
-   
+
 .flex {
     display: flex;
     @include gap();
@@ -29,4 +31,28 @@
     clip: rect(0, 0, 0, 0);
     white-space: no-wrap; // added line
     border: 0;
+}
+
+// backgrounds
+.bg-dark {
+    background-color: hsl($clr-dark);
+}
+.bg-light {
+    background-color: hsl($clr-light);
+}
+.bg-white {
+    background-color: hsl($clr-white);
+}
+
+// text
+.text-dark {
+    color: hsl($clr-dark);
+}
+
+.text-light {
+    color: hsl($clr-light);
+}
+
+.text-white {
+    color: hsl($clr-white);
 }
