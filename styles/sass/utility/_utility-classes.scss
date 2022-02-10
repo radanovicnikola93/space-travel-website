@@ -15,6 +15,10 @@
     flex-grow: 1;
 }
 
+.flow > *:not(:first-child) {
+    margin-top: 1rem;
+}
+
 .grid {
     display: grid;
     @include gap();
@@ -99,3 +103,5 @@
         color: hsl(0% 0% 100% / .25);
     }
 }
+
+

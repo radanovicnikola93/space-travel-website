@@ -69,6 +69,10 @@ select {
   flex-grow: 1;
 }
 
+.flow > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
 .grid {
   display: grid;
   gap: 1rem;
