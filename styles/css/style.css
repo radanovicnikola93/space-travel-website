@@ -183,4 +183,16 @@ select {
   line-height: 1.1;
 }
 
+.numbered-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 4.72px;
+  text-transform: uppercase;
+}
+.numbered-title span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+}
+
 /*# sourceMappingURL=style.css.map */

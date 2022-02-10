@@ -1,3 +1,4 @@
+@use "sass:color";
 @import '../variables/colors'; // import color variables
 @import '../variables/typography'; // import typography variables
 
@@ -85,4 +86,16 @@
 .fs-700,
 .fs-600 {
     line-height: 1.1;
+}
+
+.numbered-title {
+    font-family: $ff-sans-cond;
+    font-size: $fs-500;
+    @include letter-spacing(4.72px);
+    text-transform: uppercase;
+    span {
+        margin-right: .5em;
+        font-weight: 700;
+        color: hsl(0% 0% 100% / .25);
+    }
 }
