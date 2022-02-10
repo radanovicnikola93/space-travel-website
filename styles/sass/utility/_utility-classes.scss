@@ -64,8 +64,8 @@
 
 // letter spacing
 .letter-spacing-1 { @include letter-spacing(4.75px); }
-.letter-spacing-1 { @include letter-spacing(2.7px); }
-.letter-spacing-1 { @include letter-spacing(2.35px); }
+.letter-spacing-2 { @include letter-spacing(2.7px); }
+.letter-spacing-3 { @include letter-spacing(2.35px); }
 
 // uppercase
 .uppercase { text-transform: uppercase; }
