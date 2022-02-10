@@ -199,4 +199,13 @@ select {
   color: rgba(255, 255, 255, 0.25);
 }
 
+.large-button {
+  display: grid;
+  place-items: center;
+  padding: 0 2em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */
