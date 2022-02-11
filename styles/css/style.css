@@ -226,6 +226,7 @@ select {
 }
 
 .primary-navigation {
+  gap: 8rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -238,15 +239,22 @@ select {
   font-weight: 700;
 }
 
-.underline-indicators > li {
+.underline-indicators > * {
+  cursor: pointer;
+  border: 0;
   padding: 1em 0;
   border-bottom: 0.2rem solid #0c0e18;
 }
-.underline-indicators > li:hover, .underline-indicators > li:focus {
+.underline-indicators > *:hover, .underline-indicators > *:focus {
   border-color: #979797;
 }
-.underline-indicators > li.active {
+.underline-indicators > *.active, .underline-indicators > *[aria-selected=true] {
+  color: white;
   border-color: white;
+}
+
+.tab-list {
+  gap: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
