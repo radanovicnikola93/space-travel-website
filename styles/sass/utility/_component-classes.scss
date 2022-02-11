@@ -63,13 +63,17 @@
 .dot-indicators {
     button {
         cursor: pointer;
-        width: 15px;
-        height: 15px;
+        aspect-ratio: 1;
+        padding: .5em;
         border: none;
         border-radius: 50%;
+        background-color: hsl(0 0 100 / 25%);
+        &[aria-selected="true"] {
+            background-color: hsl($clr-white);
+        }
+        &:hover,
+        &:focus {
+            background-color: hsl(0 0 100 / .5);
+        }
     }
-    &[aria-selected="true"] {
-        background: hsl($clr-white);
-    }
-
 }
