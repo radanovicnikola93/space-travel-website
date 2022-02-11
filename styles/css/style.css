@@ -225,4 +225,17 @@ select {
   transform: scale(1.5);
 }
 
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.primary-navigation a {
+  text-decoration: none;
+}
+.primary-navigation a span {
+  margin-right: 0.5em;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=style.css.map */
