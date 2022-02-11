@@ -257,4 +257,15 @@ select {
   gap: 2rem;
 }
 
+.dot-indicators button {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+}
+.dot-indicators[aria-selected=true] {
+  background: white;
+}
+
 /*# sourceMappingURL=style.css.map */

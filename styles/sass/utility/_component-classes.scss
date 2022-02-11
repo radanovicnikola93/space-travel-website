@@ -59,3 +59,17 @@
 .tab-list {
     @include gap(2rem);
 }
+
+.dot-indicators {
+    button {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border: none;
+        border-radius: 50%;
+    }
+    &[aria-selected="true"] {
+        background: hsl($clr-white);
+    }
+
+}
