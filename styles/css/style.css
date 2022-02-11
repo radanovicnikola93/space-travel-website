@@ -238,4 +238,15 @@ select {
   font-weight: 700;
 }
 
+.underline-indicators > li {
+  padding: 1em 0;
+  border-bottom: 0.2rem solid #0c0e18;
+}
+.underline-indicators > li:hover, .underline-indicators > li:focus {
+  border-color: #979797;
+}
+.underline-indicators > li.active {
+  border-color: white;
+}
+
 /*# sourceMappingURL=style.css.map */

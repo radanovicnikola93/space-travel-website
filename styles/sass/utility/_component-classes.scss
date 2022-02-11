@@ -39,3 +39,15 @@
         }
     }
 }
+
+.underline-indicators > li {
+    padding: 1em 0;
+    border-bottom: .2rem solid hsl($clr-dark);
+    &:hover,
+    &:focus {
+        border-color: #979797;
+    }
+    &.active {
+        border-color: hsl($clr-white);
+    }
+}
