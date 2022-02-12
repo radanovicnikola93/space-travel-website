@@ -11,6 +11,10 @@
     @include gap();
 }
 
+.flex-dir-column {
+    flex-direction: column;
+}
+
 .flex-grow {
     flex-grow: 1;
 }

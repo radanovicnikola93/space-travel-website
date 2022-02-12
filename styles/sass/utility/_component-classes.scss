@@ -1,3 +1,5 @@
+@import '../variables/colors'; // import color variables
+
 // LARGE BUTTON
 .large-button {
     position: relative;
@@ -67,13 +69,31 @@
         padding: .5em;
         border: none;
         border-radius: 50%;
-        background-color: hsl(0 0 100 / 25%);
+        background-color: hsl(0deg 0% 100% / 25%);
         &[aria-selected="true"] {
             background-color: hsl($clr-white);
         }
         &:hover,
         &:focus {
-            background-color: hsl(0 0 100 / .5);
+            background-color: hsl(0deg 0% 100% / 50%);
+        }
+    }
+}
+
+.number-indicators {
+    button {
+        cursor: pointer;
+        height: 80px;
+        width: 80px;
+        border: 1px solid hsl(0deg 0% 100% / 25%);
+        border-radius: 50%;
+        &[aria-selected="true"] {
+            background-color: hsl($clr-white);
+            color: hsl($clr-dark);
+        }
+        &:hover,
+        &:focus {
+            border-color: hsl($clr-white);
         }
     }
 }

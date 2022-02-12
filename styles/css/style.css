@@ -65,6 +65,10 @@ select {
   gap: 1rem;
 }
 
+.flex-dir-column {
+  flex-direction: column;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -270,6 +274,21 @@ select {
 }
 .dot-indicators button:hover, .dot-indicators button:focus {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.number-indicators button {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+.number-indicators button[aria-selected=true] {
+  background-color: white;
+  color: #0c0e18;
+}
+.number-indicators button:hover, .number-indicators button:focus {
+  border-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
