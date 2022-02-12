@@ -247,7 +247,7 @@ select {
   cursor: pointer;
   border: 0;
   padding: 1em 0;
-  border-bottom: 0.2rem solid #0c0e18;
+  border-bottom: 0.2rem solid transparent;
 }
 .underline-indicators > *:hover, .underline-indicators > *:focus {
   border-color: #979797;
