@@ -4,7 +4,8 @@
   "description": "Building a space travel website by creating a design system with SCSS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass styles/sass/main.scss styles/css/style.css -w"
+    "sass": "sass styles/sass/main.scss styles/css/style.css -w",
+    "sass-starter-code": "sass styles/sass/main.scss starter-code/index.css -w"
   },
   "repository": {
     "type": "git",
