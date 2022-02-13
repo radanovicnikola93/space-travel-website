@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: 0 0% 100%;
+  background-color: 230 35% 7%;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::after,
+*::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-dir-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flow > *:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: no-wrap;
+  border: 0;
+}
+
+.bg-dark {
+  background-color: #0c0e18;
+}
+
+.bg-light {
+  background-color: #d2d8f9;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-dark {
+  color: #0c0e18;
+}
+
+.text-light {
+  color: #d2d8f9;
+}
+
+.text-white {
+  color: white;
+}
+
+.ff-serif {
+  font-family: "Bellefair", serif;
+}
+
+.ff-sans-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.ff-sans-normal {
+  font-family: "Barlow", sans-serif;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: 9.375rem;
+}
+
+.fs-800 {
+  font-size: 6.25rem;
+}
+
+.fs-700 {
+  font-size: 3.5rem;
+}
+
+.fs-600 {
+  font-size: 2rem;
+}
+
+.fs-500 {
+  font-size: 1.75rem;
+}
+
+.fs-400 {
+  font-size: 1.125rem;
+}
+
+.fs-300 {
+  font-size: 1rem;
+}
+
+.fs-200 {
+  font-size: 0.875rem;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 4.72px;
+  text-transform: uppercase;
+}
+.numbered-title span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.large-button {
+  position: relative;
+  display: grid;
+  z-index: 1;
+  place-items: center;
+  height: 274px;
+  width: 274px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.large-button::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+.large-button:hover::after, .large-button:focus::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.primary-navigation {
+  gap: 8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.primary-navigation a {
+  text-decoration: none;
+}
+.primary-navigation a span {
+  margin-right: 0.5em;
+  font-weight: 700;
+}
+
+.underline-indicators > * {
+  cursor: pointer;
+  border: 0;
+  padding: 1em 0;
+  border-bottom: 0.2rem solid transparent;
+}
+.underline-indicators > *:hover, .underline-indicators > *:focus {
+  border-color: #979797;
+}
+.underline-indicators > *.active, .underline-indicators > *[aria-selected=true] {
+  color: white;
+  border-color: white;
+}
+
+.tab-list {
+  gap: 2rem;
+}
+
+.dot-indicators button {
+  cursor: pointer;
+  aspect-ratio: 1;
+  padding: 0.5em;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.dot-indicators button[aria-selected=true] {
+  background-color: white;
+}
+.dot-indicators button:hover, .dot-indicators button:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.number-indicators button {
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+}
+.number-indicators button[aria-selected=true] {
+  background-color: white;
+  color: #0c0e18;
+}
+.number-indicators button:hover, .number-indicators button:focus {
+  border-color: white;
+}
+
+/*# sourceMappingURL=index.css.map */
