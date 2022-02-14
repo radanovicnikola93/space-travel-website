@@ -30,7 +30,7 @@ p {
 
 body {
   font-family: "Barlow", sans-serif;
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   color: 0 0% 100%;
   background-color: 230 35% 7%;
   line-height: 1.5;
@@ -171,19 +171,19 @@ select {
 }
 
 .fs-900 {
-  font-size: 9.375rem;
+  font-size: clamp(5rem, 8vw + 1rem, 9.375rem);
 }
 
 .fs-800 {
-  font-size: 6.25rem;
-}
-
-.fs-700 {
   font-size: 3.5rem;
 }
 
+.fs-700 {
+  font-size: 1.5rem;
+}
+
 .fs-600 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .fs-500 {
@@ -191,7 +191,7 @@ select {
 }
 
 .fs-400 {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
 }
 
 .fs-300 {
