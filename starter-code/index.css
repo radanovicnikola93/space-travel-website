@@ -325,4 +325,25 @@ select {
   border-color: white;
 }
 
+body {
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.home {
+  background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
+}
+
+@media (min-width: 35rem) {
+  .home {
+    background-position: center center;
+    background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
+  }
+}
+@media (min-width: 45rem) {
+  .home {
+    background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
