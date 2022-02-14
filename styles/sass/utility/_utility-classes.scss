@@ -28,6 +28,10 @@
     @include gap();
 }
 
+.d-block {
+    display: block;
+}
+
 .container {
     padding-inline: 2em; // modern padding declaration -> padding left and right
     margin-inline: auto; // margin left and right
