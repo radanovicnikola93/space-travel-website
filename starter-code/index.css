@@ -296,6 +296,7 @@ select {
     inset: 0 0 0 20%;
     z-index: 1000;
     transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
   }
   .primary-navigation.underline-indicators {
     gap: 0.5rem;
@@ -319,6 +320,12 @@ select {
     width: 1.5rem;
     aspect-ratio: 1;
     border: 0;
+  }
+  .mobile-nav-toggle[aria-expanded=true] {
+    background-image: url(./assets/shared/icon-close.svg);
+  }
+  .mobile-nav-toggle:focus {
+    outline: none;
   }
 }
 .underline-indicators > * {
