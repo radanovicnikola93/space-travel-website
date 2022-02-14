@@ -31,6 +31,8 @@
 
 .primary-navigation {
     flex-direction: row;
+    background: hsl(0 0 100 / .1);
+    backdrop-filter: blur(1rem);
     a {
         text-decoration: none;
         span {
@@ -40,6 +42,7 @@
     }
 }
 
+// mobile view
 @media (max-width: 35rem) {
     .primary-navigation {
         list-style: none;
@@ -49,7 +52,7 @@
         position: fixed;
         inset: 0 0 0 20%; // shortcut for top, right, bottom and left
         z-index: 1000;
-        background: rgba(0,0,0,70%);
+        
         &.underline-indicators {
             gap: .5rem;
             > .active {
