@@ -98,6 +98,7 @@ select {
   text-align: center;
   display: grid;
   place-items: center;
+  padding-inline: 1rem;
 }
 .grid-container * {
   max-width: 45ch;
@@ -114,6 +115,10 @@ select {
   }
   .grid-container > *:last-child {
     grid-column: 3;
+  }
+  .grid-container.grid-container--home {
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
   }
 }
 .sr-only {
