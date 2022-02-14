@@ -264,14 +264,7 @@ select {
 }
 
 .primary-navigation {
-  list-style: none;
-  padding: min(20rem, 10vh) 2rem;
-  margin: 0;
-  flex-direction: column;
-  position: fixed;
-  inset: 0 0 0 20%;
-  z-index: 1000;
-  background: limegreen;
+  flex-direction: row;
 }
 .primary-navigation a {
   text-decoration: none;
@@ -281,9 +274,19 @@ select {
   font-weight: 700;
 }
 
-@media (min-width: 35rem) {
+@media (max-width: 35rem) {
   .primary-navigation {
-    flex-direction: row;
+    list-style: none;
+    padding: min(20rem, 10vh) 2rem;
+    margin: 0;
+    flex-direction: column;
+    position: fixed;
+    inset: 0 0 0 20%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .primary-navigation.underline-indicators > .active {
+    border: 0;
   }
 }
 .underline-indicators > * {

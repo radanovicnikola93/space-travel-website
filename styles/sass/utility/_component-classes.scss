@@ -30,14 +30,7 @@
 }
 
 .primary-navigation {
-    list-style: none;
-    padding: min(20rem, 10vh) 2rem;
-    margin: 0;
-    flex-direction: column;
-    position: fixed;
-    inset: 0 0 0 20%; // shortcut for top, right, bottom and left
-    z-index: 1000;
-    background: limegreen;
+    flex-direction: row;
     a {
         text-decoration: none;
         span {
@@ -47,9 +40,21 @@
     }
 }
 
-@media (min-width: 35rem) {
+@media (max-width: 35rem) {
     .primary-navigation {
-        flex-direction: row;
+        list-style: none;
+        padding: min(20rem, 10vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        position: fixed;
+        inset: 0 0 0 20%; // shortcut for top, right, bottom and left
+        z-index: 1000;
+        background: rgba(0,0,0,70%);
+        &.underline-indicators {
+            > .active {
+                border: 0;
+            }
+        }
     }
 }
 
