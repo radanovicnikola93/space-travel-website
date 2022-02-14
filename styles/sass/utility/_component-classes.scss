@@ -31,14 +31,22 @@
 
 .primary-navigation {
     flex-direction: row;
-    background: hsl(0 0 100 / .05);
-    backdrop-filter: blur(1.5rem);
+    background: hsl(100 100 0 / .95); // if there is not browser support for background
+    // backdrop-filter: blur(1.5rem);
     a {
         text-decoration: none;
         span {
             margin-right: 0.5em;
             font-weight: 700;
         }
+    }
+}
+
+// browser support
+@supports (backdrop-filter: blur(1.5rem)) {
+    .primary-navigation {
+        background: hsl(0 0 100 / .05);
+        backdrop-filter: blur(1.5rem);
     }
 }
 
