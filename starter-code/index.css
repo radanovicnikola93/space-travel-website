@@ -303,6 +303,9 @@ select {
   .primary-navigation.underline-indicators > .active {
     border: 0;
   }
+  .primary-navigation[data-visible=true] {
+    transform: translateX(0%);
+  }
 
   .mobile-nav-toggle {
     display: block;
