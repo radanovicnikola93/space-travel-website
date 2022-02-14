@@ -95,11 +95,17 @@ select {
 }
 
 .grid-container {
+  text-align: center;
   display: grid;
+  place-items: center;
+}
+.grid-container * {
+  max-width: 45ch;
 }
 
 @media (min-width: 45rem) {
   .grid-container {
+    text-align: left;
     column-gap: 2rem;
     grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 40rem)) minmax(2rem, 1fr);
   }
@@ -226,6 +232,7 @@ select {
 }
 
 .large-button {
+  font-size: 2rem;
   position: relative;
   display: inline-grid;
   z-index: 1;
