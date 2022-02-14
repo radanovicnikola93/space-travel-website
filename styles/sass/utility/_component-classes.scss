@@ -51,6 +51,7 @@
         z-index: 1000;
         background: rgba(0,0,0,70%);
         &.underline-indicators {
+            gap: .5rem;
             > .active {
                 border: 0;
             }

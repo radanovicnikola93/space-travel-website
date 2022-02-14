@@ -285,6 +285,9 @@ select {
     z-index: 1000;
     background: rgba(0, 0, 0, 0.7);
   }
+  .primary-navigation.underline-indicators {
+    gap: 0.5rem;
+  }
   .primary-navigation.underline-indicators > .active {
     border: 0;
   }
