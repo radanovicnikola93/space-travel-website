@@ -264,10 +264,14 @@ select {
 }
 
 .primary-navigation {
-  gap: 8rem;
   list-style: none;
-  padding: 0;
+  padding: min(20rem, 10vh) 2rem;
   margin: 0;
+  flex-direction: column;
+  position: fixed;
+  inset: 0 0 0 20%;
+  z-index: 1000;
+  background: limegreen;
 }
 .primary-navigation a {
   text-decoration: none;
@@ -277,6 +281,11 @@ select {
   font-weight: 700;
 }
 
+@media (min-width: 35rem) {
+  .primary-navigation {
+    flex-direction: row;
+  }
+}
 .underline-indicators > * {
   cursor: pointer;
   border: 0;
