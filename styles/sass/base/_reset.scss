@@ -46,6 +46,7 @@ body {
 
     display: grid; // stretching content on whole height
     grid-template-rows: min-content 1fr;
+    overflow-x: hidden;
 }
 
 // Images

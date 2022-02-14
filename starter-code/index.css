@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
 }
 
 img,
@@ -275,6 +276,10 @@ select {
   font-weight: 700;
 }
 
+.mobile-nav-toggle {
+  display: none;
+}
+
 @supports (backdrop-filter: blur(1.5rem)) {
   .primary-navigation {
     background: rgba(255, 255, 255, 0.05);
@@ -290,11 +295,26 @@ select {
     position: fixed;
     inset: 0 0 0 20%;
     z-index: 1000;
+    transform: translateX(100%);
   }
   .primary-navigation.underline-indicators {
     gap: 0.5rem;
   }
   .primary-navigation.underline-indicators > .active {
+    border: 0;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    background-image: url(./assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 1;
     border: 0;
   }
 }

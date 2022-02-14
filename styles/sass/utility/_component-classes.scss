@@ -42,6 +42,10 @@
     }
 }
 
+.mobile-nav-toggle {
+    display: none;
+}
+
 // browser support
 @supports (backdrop-filter: blur(1.5rem)) {
     .primary-navigation {
@@ -60,13 +64,28 @@
         position: fixed;
         inset: 0 0 0 20%; // shortcut for top, right, bottom and left
         z-index: 1000;
-        
+        transform: translateX(100%);
         &.underline-indicators {
             gap: .5rem;
             > .active {
                 border: 0;
             }
         }
+    }
+
+    .mobile-nav-toggle {
+        display: block;
+        position: absolute;
+        z-index: 2000;
+        right: 1rem;
+        top: 2rem;
+        background: transparent;
+        background-image: url(./assets/shared/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        border: 0;
+
     }
 }
 
