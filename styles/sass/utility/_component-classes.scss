@@ -31,8 +31,8 @@
 
 .primary-navigation {
     flex-direction: row;
-    background: hsl(0 0 100 / .1);
-    backdrop-filter: blur(1rem);
+    background: hsl(0 0 100 / .05);
+    backdrop-filter: blur(1.5rem);
     a {
         text-decoration: none;
         span {
