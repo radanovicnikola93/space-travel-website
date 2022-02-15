@@ -115,7 +115,7 @@
     }
 }
 
-@media (min-width: 35em) and (max-width: 45em) {
+@media (min-width: 35em) and (max-width: 44.999em) {
     .primary-navigation {
         a {
             > span {
@@ -126,6 +126,21 @@
 }
 
 @media (min-width: 45em) {
+    .primary-header::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin-right: -2.5rem;
+        background: hsl(0deg 0% 100%);
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
     .primary-navigation {
         margin-block: 2rem;
     }
