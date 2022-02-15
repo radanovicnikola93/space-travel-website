@@ -33,7 +33,13 @@
     margin: 1.5rem clamp(1.5rem, 5vw ,3.5rem);
 }
 
+.primary-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
 .primary-navigation {
+    gap: clamp(2rem, 5vw, 3.5rem);
     list-style: none;
     flex-direction: row;
     background: hsl(100deg 100% 0% / 95%); // if there is not browser support for background
@@ -99,6 +105,17 @@
         }
         &:focus {
             outline: none;
+        }
+    }
+}
+
+@media (min-width: 35em) and (max-width: 45em) {
+    .primary-navigation {
+        padding-inline: 3rem;
+        a {
+            > span {
+                display: none;
+            }
         }
     }
 }

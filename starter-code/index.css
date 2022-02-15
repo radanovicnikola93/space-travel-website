@@ -268,7 +268,13 @@ select {
   margin: 1.5rem clamp(1.5rem, 5vw, 3.5rem);
 }
 
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .primary-navigation {
+  gap: clamp(2rem, 5vw, 3.5rem);
   list-style: none;
   flex-direction: row;
   background: rgba(0, 0, 0, 0.95);
@@ -331,6 +337,14 @@ select {
   }
   .mobile-nav-toggle:focus {
     outline: none;
+  }
+}
+@media (min-width: 35em) and (max-width: 45em) {
+  .primary-navigation {
+    padding-inline: 3rem;
+  }
+  .primary-navigation a > span {
+    display: none;
   }
 }
 .underline-indicators > * {
