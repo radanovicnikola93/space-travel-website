@@ -29,6 +29,10 @@
     }
 }
 
+.logo {
+    margin: 1.5rem clamp(1.5rem, 5vw ,3.5rem);
+}
+
 .primary-navigation {
     flex-direction: row;
     background: hsl(100deg 100% 0% / 95%); // if there is not browser support for background
