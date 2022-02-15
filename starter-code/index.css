@@ -269,6 +269,7 @@ select {
 }
 
 .primary-navigation {
+  list-style: none;
   flex-direction: row;
   background: rgba(0, 0, 0, 0.95);
 }

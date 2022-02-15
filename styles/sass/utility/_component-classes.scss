@@ -34,6 +34,7 @@
 }
 
 .primary-navigation {
+    list-style: none;
     flex-direction: row;
     background: hsl(100deg 100% 0% / 95%); // if there is not browser support for background
     // backdrop-filter: blur(1.5rem);
