@@ -39,24 +39,43 @@
   </header>
 
   <main id="id" class="grid-container grid-container--destination">
-    01 Pick your destination
+    <!-- numbered title -->
+    <h2 class="numbered-title"><span>01 </span> Pick your destination</h2>
 
-    Moon
-    Mars
-    Europa
-    Titan
+    <!-- image -->
+    <div>
+      <img src="./assets/destination/image-moon.png" alt="">
+    </div>
 
-    Moon
+    <!-- tabs -->
+    <div class="tab-list underline-indicators flex" style="margin-bottom: 4rem;">
+        <button aria-selected="true" class="bg-dark uppercase letter-spacing-2 text-white ff-sans-cond">Moon</button>
+        <button aria-selected="false" class="bg-dark uppercase letter-spacing-2 text-light ff-sans-cond">Mars</button>
+        <button aria-selected="false" class="bg-dark uppercase letter-spacing-2 text-light ff-sans-cond">Europa</button>
+        <button aria-selected="false" class="bg-dark uppercase letter-spacing-2 text-light ff-sans-cond">Titan</button>
+    </div>
 
-    See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-    regain perspective and come back refreshed. While you’re there, take in some history 
-    by visiting the Luna 2 and Apollo 11 landing sites.
+    <!-- header -->
+    <div>
+        <p class="fs-900 ff-serif uppercase">Moon</p>
+    </div>
 
-    Avg. distance
-    384,400 km
-
-    Est. travel time
-    3 days
+    <!-- content -->
+    <div>
+      <p class="fs-400 ff-sans-normal text-light">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.
+      </p>
+      <div>
+          <p class="fs-200 ff-sans-cond uppercase letter-spacing-3">Avg. Distance</p>
+          <p class="fs-600 ff-serif uppercase">384,400 km</p>
+      </div>
+      <div>
+          <p class="fs-200 ff-sans-cond uppercase letter-spacing-3">Est. travel time</p>
+          <p class="fs-600 ff-serif uppercase">3 days</p>
+      </div>
+    </div>
   </main>
 </body>
 </html>
