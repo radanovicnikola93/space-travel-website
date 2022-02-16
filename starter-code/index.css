@@ -203,7 +203,7 @@ select {
 }
 
 .fs-500 {
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 
 .fs-400 {
@@ -227,7 +227,7 @@ select {
 
 .numbered-title {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.75rem;
+  font-size: 1rem;
   letter-spacing: 4.72px;
   text-transform: uppercase;
 }
