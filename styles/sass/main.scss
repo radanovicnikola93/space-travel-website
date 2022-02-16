@@ -4,8 +4,11 @@
 // utility
 @import "./utility/utility-classes";
 @import "./utility/component-classes";
-@import "./utility/page-specific";
 
 // variables
 @import "./variables/colors";
 @import "./variables/typography";
+
+// layout
+@import "./layout/body";
+@import "./layout/home";
