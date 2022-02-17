@@ -553,6 +553,9 @@ body {
 .grid-container--crew > .crew-details h2 {
   opacity: 0.5;
 }
+.grid-container--crew > .crew-details * {
+  margin: 1rem 0;
+}
 
 .crew-meta {
   flex-direction: column;
