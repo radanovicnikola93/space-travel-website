@@ -514,5 +514,78 @@ body {
     justify-content: flex-start;
   }
 }
+.crew {
+  background-image: url(../starter-code/assets/crew/background-crew-mobile.jpg);
+}
+@media (min-width: 35rem) {
+  .crew {
+    background-position: center center;
+    background-image: url(../starter-code/assets/crew/background-crew-tablet.jpg);
+  }
+}
+@media (min-width: 45rem) {
+  .crew {
+    background-image: url(../starter-code/assets/crew/background-crew-desktop.jpg);
+  }
+}
+
+.grid-container--crew {
+  gap: 2rem;
+  grid-template-areas: "title" "image" "dots" "content";
+}
+.grid-container--crew .numbered-title {
+  grid-area: title;
+}
+.grid-container--crew > img {
+  grid-area: image;
+  max-width: 60%;
+}
+.grid-container--crew > .dot-indicators {
+  grid-area: dots;
+}
+.grid-container--crew > .crew-details {
+  grid-area: content;
+}
+
+.crew-meta {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+.crew-meta p {
+  font-size: 1.75rem;
+}
+
+@media (min-width: 35rem) {
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
+
+  .crew-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 45rem) {
+  .grid-container--crew {
+    justify-items: start;
+    align-content: center;
+    grid-template-areas: ". title title ." ". dots image ." ". content image .";
+  }
+  .grid-container--crew > img {
+    max-width: 90%;
+  }
+  .grid-container--crew .crew-details p {
+    max-width: 28rem;
+  }
+  .grid-container--crew .crew-details .crew-meta {
+    gap: min(6vw, 6rem);
+    justify-content: flex-start;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
