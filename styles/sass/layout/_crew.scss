@@ -54,6 +54,7 @@
 
 @media (min-width: 35rem) {
     .grid-container--crew {
+        padding-bottom: 0;
         gap: 2rem;
         grid-template-areas:
             'title'
@@ -86,12 +87,16 @@
             '. dots image .'
         ;
 
+        .dot-indicators {
+            justify-content: start;
+        }
+
         > img {
             max-width: 90%;
+            align-self: end;
         }
 
         .crew-details {
-
             p {
                 max-width: 28rem;
             }

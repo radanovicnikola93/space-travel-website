@@ -561,6 +561,7 @@ body {
 
 @media (min-width: 35rem) {
   .grid-container--crew {
+    padding-bottom: 0;
     gap: 2rem;
     grid-template-areas: "title" "content" "dots" "image";
   }
@@ -584,8 +585,12 @@ body {
     align-content: center;
     grid-template-areas: ". title title ." ". content image ." ". dots image .";
   }
+  .grid-container--crew .dot-indicators {
+    justify-content: start;
+  }
   .grid-container--crew > img {
     max-width: 90%;
+    align-self: end;
   }
   .grid-container--crew .crew-details p {
     max-width: 28rem;
