@@ -28,6 +28,7 @@
     > img {
         grid-area: image;
         max-width: 60%;
+        border-bottom: 1px solid hsl(0deg 0% 100% / 10%);
     }
 
     > .dot-indicators {
@@ -43,7 +44,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid hsl(0deg 0% 100% / 10%);
     padding-top: 2.5rem;
     margin-top: 2.5rem;
 
@@ -53,6 +53,18 @@
 }
 
 @media (min-width: 35rem) {
+    .grid-container--crew {
+        gap: 2rem;
+        grid-template-areas:
+            'title'
+            'content'
+            'dots'
+            'image'
+        ;
+        > img {
+            border: none;
+        }
+    }
     .numbered-title {
         justify-self: start;
         margin-top: 2rem;
