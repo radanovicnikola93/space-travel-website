@@ -44,7 +44,7 @@
     place-items: center;
     padding-inline: 1rem;
     padding-bottom: 4rem;
-    p:not([class]) { // only applying for paragraphs without classes
+    p { // only applying for paragraphs without classes
         max-width: 50ch;
     }
 }

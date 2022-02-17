@@ -102,7 +102,7 @@ select {
   padding-inline: 1rem;
   padding-bottom: 4rem;
 }
-.grid-container p:not([class]) {
+.grid-container p {
   max-width: 50ch;
 }
 
