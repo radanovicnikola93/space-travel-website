@@ -1,3 +1,17 @@
+// HOME
+.destination {
+    background-image: url(../starter-code/assets/destination/background-destination-mobile.jpg);
+
+    @media (min-width: 35rem) {
+        background-position: center center; // making text more readable
+        background-image: url(../starter-code/assets/destination/background-destination-tablet.jpg);
+    }
+
+    @media (min-width: 45rem) {
+        background-image: url(../starter-code/assets/destination/background-destination-desktop.jpg);
+    }
+}
+
 .grid-container--destination {
     gap: 2rem;
     grid-template-areas: 
