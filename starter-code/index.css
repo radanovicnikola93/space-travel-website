@@ -437,5 +437,32 @@ body {
     background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
   }
 }
+.grid-container--destination {
+  grid-template-areas: "title" "image" "tabs" "content";
+}
+.grid-container--destination .numbered-title {
+  grid-area: title;
+}
+.grid-container--destination > img {
+  grid-area: image;
+  max-width: 60%;
+}
+.grid-container--destination > .tab-list {
+  grid-area: tabs;
+}
+.grid-container--destination > .destination-info {
+  grid-area: content;
+  text-align: center;
+}
+
+.destination-meta {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
 
 /*# sourceMappingURL=index.css.map */
