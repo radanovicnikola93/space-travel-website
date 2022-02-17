@@ -438,6 +438,7 @@ body {
   }
 }
 .grid-container--destination {
+  gap: 2rem;
   grid-template-areas: "title" "image" "tabs" "content";
 }
 .grid-container--destination .numbered-title {
