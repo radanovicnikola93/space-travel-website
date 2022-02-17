@@ -467,6 +467,9 @@ body {
 .grid-container--destination > .tab-list {
   grid-area: tabs;
 }
+.grid-container--destination > .tab-list button {
+  background-color: transparent;
+}
 .grid-container--destination > .destination-info {
   grid-area: content;
 }

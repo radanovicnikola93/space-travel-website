@@ -29,7 +29,11 @@
         max-width: 60%;
     }
     > .tab-list {
+        
         grid-area: tabs;
+        button {
+            background-color: transparent;
+        }
     }
     >.destination-info {
         grid-area: content;
