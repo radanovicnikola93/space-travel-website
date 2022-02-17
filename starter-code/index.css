@@ -373,7 +373,7 @@ select {
 .underline-indicators > * {
   cursor: pointer;
   border: 0;
-  padding: 1em 0;
+  padding: 0.7rem 0;
   border-bottom: 0.2rem solid transparent;
 }
 .underline-indicators > *:hover, .underline-indicators > *:focus {
