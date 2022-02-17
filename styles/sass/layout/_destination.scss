@@ -32,3 +32,13 @@
     margin-top: 2.5rem;
 }
 
+@media (min-width: 35rem){
+    .numbered-title {
+        justify-self: start;
+        margin-top: 2rem;
+    }
+
+    .destination-meta {
+        flex-direction: row;
+    }
+}
