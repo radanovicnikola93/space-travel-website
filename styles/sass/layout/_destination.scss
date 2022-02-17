@@ -67,7 +67,7 @@
                 font-size: 6rem !important;
             }
             .destination-meta {
-                gap: 6rem;
+                gap: min(6vw, 6rem);
                 justify-content: flex-start;
             }
         }
