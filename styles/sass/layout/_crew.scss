@@ -70,8 +70,8 @@
         align-content: center;
         grid-template-areas:
             '. title title .'
-            '. dots image .'
             '. content image .'
+            '. dots image .'
         ;
 
         > img {

@@ -574,7 +574,7 @@ body {
   .grid-container--crew {
     justify-items: start;
     align-content: center;
-    grid-template-areas: ". title title ." ". dots image ." ". content image .";
+    grid-template-areas: ". title title ." ". content image ." ". dots image .";
   }
   .grid-container--crew > img {
     max-width: 90%;
