@@ -482,7 +482,7 @@ body {
 @media (min-width: 45rem) {
   .grid-container--destination {
     justify-items: start;
-    align-content: start;
+    align-content: center;
     grid-template-areas: ". title title ." ". image tabs ." ". image content .";
   }
   .grid-container--destination > img {
@@ -490,6 +490,9 @@ body {
   }
   .grid-container--destination .destination-info h2 {
     font-size: 6rem !important;
+  }
+  .grid-container--destination .destination-info p {
+    max-width: 28rem;
   }
   .grid-container--destination .destination-info .destination-meta {
     gap: min(6vw, 6rem);
