@@ -550,6 +550,9 @@ body {
 .grid-container--crew > .crew-details {
   grid-area: content;
 }
+.grid-container--crew > .crew-details h2 {
+  opacity: 0.5;
+}
 
 .crew-meta {
   flex-direction: column;

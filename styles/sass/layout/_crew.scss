@@ -37,6 +37,9 @@
 
     > .crew-details {
         grid-area: content;
+        h2 {
+            opacity: .5;
+        }
     }
 }
 
