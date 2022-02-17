@@ -10,7 +10,7 @@ $fs-300: 1rem;
 $fs-200: 0.875rem;
 
 // tablet 560px
-@media (min-width: 35em) {
+@media (min-width: 35rem) {
     $fs-800: 5rem;
     $fs-700: 2.5rem;
     $fs-600: 1.5rem;
@@ -19,7 +19,7 @@ $fs-200: 0.875rem;
 }
 
 // desktop 720px
-@media (min-width: 45em) {
+@media (min-width: 45rem) {
     $fs-800: 6.25rem;
     $fs-700: 3.5rem;
     $fs-600: 2rem;
