@@ -24,7 +24,7 @@
     .numbered-title {
         grid-area: title;
     }
-    > img {
+    > picture {
         grid-area: image;
         max-width: 60%;
     }
@@ -73,7 +73,7 @@
             '. image content .'
         ;
 
-        > img {
+        > picture {
             max-width: 90%;
         }
 

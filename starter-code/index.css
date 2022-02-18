@@ -460,7 +460,7 @@ body {
 .grid-container--destination .numbered-title {
   grid-area: title;
 }
-.grid-container--destination > img {
+.grid-container--destination > picture {
   grid-area: image;
   max-width: 60%;
 }
@@ -503,7 +503,7 @@ body {
     align-content: center;
     grid-template-areas: ". title title ." ". image tabs ." ". image content .";
   }
-  .grid-container--destination > img {
+  .grid-container--destination > picture {
     max-width: 90%;
   }
   .grid-container--destination .destination-info h2 {
@@ -539,7 +539,7 @@ body {
 .grid-container--crew .numbered-title {
   grid-area: title;
 }
-.grid-container--crew > img {
+.grid-container--crew > picture {
   grid-area: image;
   max-width: 60%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -597,7 +597,7 @@ body {
   .grid-container--crew .dot-indicators {
     justify-content: start;
   }
-  .grid-container--crew > img {
+  .grid-container--crew > picture {
     max-width: 90%;
     align-self: end;
   }
