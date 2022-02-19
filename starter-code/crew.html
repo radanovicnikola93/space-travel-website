@@ -157,9 +157,15 @@
           time as commander of Crew Dragon Demo-2.
         </p>
       </article>
-      
+
       <!-- specialist -->
-      <article class="crew-details">
+      <article
+        hidden
+        class="crew-details flow"
+        id="mission-tab"
+        role="tabpanel"
+        tabindex="-1"
+      >
         <div class="crew-meta">
           <h2 class="fs-600 ff-serif uppercase">Mission Specialist</h2>
           <p class="fs-700 uppercase ff-serif">Mark Shuttleworth</p>
@@ -172,7 +178,13 @@
       </article>
 
       <!-- pilot -->
-      <article class="crew-details">
+      <article
+        hidden
+        class="crew-details flow"
+        id="pilot-tab"
+        role="tabpanel"
+        tabindex="-1"
+      >
         <div class="crew-meta">
           <h2 class="fs-600 ff-serif uppercase">Pilot</h2>
           <p class="fs-700 uppercase ff-serif">Victor Glover</p>
@@ -186,7 +198,13 @@
       </article>
 
       <!-- engineer -->
-      <article class="crew-details">
+      <article
+        hidden
+        class="crew-details flow"
+        id="crew-tab"
+        role="tabpanel"
+        tabindex="-1"
+      >
         <div class="crew-meta">
           <h2 class="fs-600 ff-serif uppercase">Flight Engineer</h2>
           <p class="fs-700 uppercase ff-serif">Anousheh Ansari</p>
@@ -213,7 +231,7 @@
       </picture>
 
       <!-- specialist -->
-      <picture>
+      <picture hidden id="mission-image">
         <source
           srcset="./assets/crew/image-mark-shuttleworth.webp"
           type="image/webp"
@@ -225,16 +243,16 @@
       </picture>
 
       <!-- pilot -->
-      <picture>
+      <picture hidden id="pilot-image">
         <source
           srcset="./assets/crew/image-victor-glover.webp"
           type="image/webp"
         />
         <img src="./assets/crew/image-victor-glover.png" alt="Victor Glover" />
       </picture>
-      
+
       <!-- engineer -->
-      <picture>
+      <picture hidden id="crew-image">
         <source
           srcset="./assets/crew/image-anousheh-ansari.webp"
           type="image/webp"
@@ -244,7 +262,6 @@
           alt="Anousheh Ansari"
         />
       </picture>
-
     </main>
   </body>
 </html>
