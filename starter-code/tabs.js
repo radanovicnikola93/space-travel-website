@@ -50,7 +50,10 @@ function changeTabPanel(e) {
     const tabContainer = targetTab.parentNode; // tab-list
     const mainContainer = tabContainer.parentNode; // main
 
-    // CONTENT
+    // aria-selected
+    tabContainer.querySelector('[aria-selected="true"]').setAttribute("aria-selected", false);
+    targetTab.setAttribute("aria-selected", true);
+        // CONTENT
     mainContainer.querySelectorAll('article').forEach(article => 
         article.setAttribute("hidden", true)
     )
