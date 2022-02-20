@@ -202,11 +202,13 @@
     }
 }
 
-picture {
-    .active-image {
-        display: block;
+.grid-container {
+    > picture {
+    &.active-image {
+        display: block !important;
     }
-    .hide-image {
-        display: none;
+    &.hide-image {
+        display: none !important;
     }
+}
 }

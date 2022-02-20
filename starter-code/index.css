@@ -418,11 +418,11 @@ select {
   border-color: white;
 }
 
-picture .active-image {
-  display: block;
+.grid-container > picture.active-image {
+  display: block !important;
 }
-picture .hide-image {
-  display: none;
+.grid-container > picture.hide-image {
+  display: none !important;
 }
 
 body {
