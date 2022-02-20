@@ -96,21 +96,26 @@
 
 @media (min-width: 45rem) {
     .grid-container--technology {
+        grid-template-columns: minmax(2rem, 1fr) minmax(5rem, 1fr) minmax(0, 40rem) minmax(0, 50rem);
         justify-items: start;
         align-content: center;
         grid-template-areas:
             '. title title .'
-            '. dots content .'
-            '. image image .'
+            '. dots content image'
         ;
 
         .number-indicators {
-            justify-content: start;
+            grid-column: 2 !important;
+            outline: 1px solid red;
         }
 
         > picture {
+            grid-column: 4 !important;
+            position: absolute;
+            right: 0;
+            outline: 1px solid red;
+
             max-width: 90%;
-            align-self: end;
 
             .mobile-image {
                 display: none;
@@ -121,6 +126,9 @@
         }
 
         .technology-details {
+            grid-column: 3 !important;
+
+            outline: 1px solid red;
             p {
                 max-width: 28rem;
             }
