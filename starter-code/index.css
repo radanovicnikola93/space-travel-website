@@ -663,10 +663,10 @@ body {
 }
 
 @media (max-width: 44.999rem) {
-  .grid-container--technology div > picture .mobile-image {
+  .grid-container--technology picture .mobile-image {
     display: block;
   }
-  .grid-container--technology div > picture .desktop-image {
+  .grid-container--technology picture .desktop-image {
     display: none;
   }
 }
@@ -682,14 +682,10 @@ body {
   }
 }
 @media (min-width: 45rem) {
-  .grid-container {
-    grid-template-columns: minmax(2rem, 1fr) repeat(3, minmax(0, 40rem));
-  }
-
   .grid-container--technology {
     justify-items: start;
     align-content: center;
-    grid-template-areas: ". title title ." ". tabs content image";
+    grid-template-areas: ". title title ." ". tabs content .";
   }
   .grid-container--technology div > picture {
     max-width: 100%;

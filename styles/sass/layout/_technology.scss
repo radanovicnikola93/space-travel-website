@@ -1,122 +1,118 @@
 .technology {
-    background-image: url(../starter-code/assets/technology/background-technology-mobile.jpg);
+  background-image: url(../starter-code/assets/technology/background-technology-mobile.jpg);
 
-    @media (min-width: 35rem) {
-        background-position: center center; // making text more readable
-        background-image: url(../starter-code/assets/technology/background-technology-tablet.jpg);
-    }
+  @media (min-width: 35rem) {
+    background-position: center center; // making text more readable
+    background-image: url(../starter-code/assets/technology/background-technology-tablet.jpg);
+  }
 
-    @media (min-width: 45rem) {
-        background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
-    }
+  @media (min-width: 45rem) {
+    background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
+  }
 }
 
 .grid-container--technology {
-    gap: 2rem;
-    grid-template-areas: 
-        'title'
-        'image'
-        'tabs'
-        'content'
-    ;
+  gap: 2rem;
+  grid-template-areas:
+    "title"
+    "image"
+    "tabs"
+    "content";
 
-    .numbered-title {
-        grid-area: title;
+  .numbered-title {
+    grid-area: title;
+  }
+  > picture {
+    grid-area: image;
+    max-width: 100%;
+    .mobile-image {
+      display: block;
     }
-    > picture {
-        grid-area: image;
-        max-width: 100%;
-        .mobile-image {
-            display: block;
-        }
-        .desktop-image {
-            display: none;
-        }
+    .desktop-image {
+      display: none;
     }
-    > .number-indicators {
-        grid-area: tabs;
-        flex-direction: row;
-    }
-    >.technology-info {
-        grid-area: content;
-    }
+  }
+  > .number-indicators {
+    grid-area: tabs;
+    flex-direction: row;
+  }
+  > .technology-info {
+    grid-area: content;
+  }
 }
 .technology-meta {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid hsl(0deg 0% 100% / 10%);
-    padding-top: 2.5rem;
-    margin-top: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid hsl(0deg 0% 100% / 10%);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
 
-    p {
-        font-size: 1.75rem;
-    }
+  p {
+    font-size: 1.75rem;
+  }
 }
 
 @media (max-width: 44.999rem) {
-    .grid-container--technology {
-        div > picture {
-            .mobile-image {
-                display: block;
-            }
-            .desktop-image {
-                display: none;
-            }
-        }
+  .grid-container--technology {
+    picture {
+      .mobile-image {
+        display: block;
+      }
+      .desktop-image {
+        display: none;
+      }
     }
+  }
 }
 
 @media (min-width: 35rem) {
-    .numbered-title {
-        justify-self: start;
-        margin-top: 2rem;
-    }
+  .numbered-title {
+    justify-self: start;
+    margin-top: 2rem;
+  }
 
-    .technology-meta {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .technology-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 45rem) {
-    .grid-container {
-        grid-template-columns: minmax(2rem, 1fr) repeat(3, minmax(0, 40rem));
+
+
+  .grid-container--technology {
+    justify-items: start;
+    align-content: center;
+    grid-template-areas:
+      ". title title ."
+      ". tabs content .";
+
+    div > picture {
+      max-width: 100%;
+      outline: 2px solid greenyellow;
+      .mobile-image {
+        display: none;
+      }
+      .desktop-image {
+        display: block;
+      }
     }
 
-    .grid-container--technology {
-        justify-items: start;
-        align-content: center;
-        grid-template-areas:
-            '. title title .'
-            '. tabs content image'
-        ;
-
-        div > picture {
-            max-width: 100%;
-            outline: 2px solid greenyellow;
-            .mobile-image {
-                display: none;
-            }
-            .desktop-image {
-                display: block;
-            }
-        }
-
-        > .number-indicators {
-            flex-direction: column;
-            outline: 2px solid greenyellow;
-        }
-
-        .technology-info {
-            outline: 2px solid greenyellow;
-            p {
-                max-width: 28rem;
-            }
-            .technology-meta {
-                gap: min(6vw, 6rem);
-                justify-content: flex-start;
-            }
-        }
+    > .number-indicators {
+      flex-direction: column;
+      outline: 2px solid greenyellow;
     }
+
+    .technology-info {
+      outline: 2px solid greenyellow;
+      p {
+        max-width: 28rem;
+      }
+      .technology-meta {
+        gap: min(6vw, 6rem);
+        justify-content: flex-start;
+      }
+    }
+  }
 }
