@@ -418,6 +418,13 @@ select {
   border-color: white;
 }
 
+picture .active-image {
+  display: block;
+}
+picture .hide-image {
+  display: none;
+}
+
 body {
   background-size: cover;
   background-position: bottom center;

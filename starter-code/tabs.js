@@ -60,8 +60,21 @@ function changeTabPanel(e) {
 
     
     // PICTURE
-    hideContent(mainContainer, 'picture')
-    showContent(mainContainer, [`#${targetImage}`]); // remove hidden attribute on selected targetPanel
+    hideImage(mainContainer, 'picture')
+    showImage(mainContainer, [`#${targetImage}`]);
+}
+
+// images
+const hideImage = (parent, image) => {
+    parent.querySelectorAll(image).forEach(img => {
+        img.classList.remove("active-image");
+        img.classList.add("hide-image");
+    })
+}
+
+const showImage = (parent, target) => {
+    parent.querySelector(target).classList.add("active-image");
+    parent.querySelector([target]).classList.remove("hide-image");
 }
 
 const hideContent = (parent, content) => {

@@ -201,3 +201,12 @@
         }
     }
 }
+
+picture {
+    .active-image {
+        display: block;
+    }
+    .hide-image {
+        display: none;
+    }
+}
