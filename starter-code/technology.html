@@ -45,23 +45,22 @@
     <h1 class="numbered-title"><span aria-hidden="true">03 </span>Space launch 101</h1>
 
     <!-- NUMBERS -->
-    <div class="number-indicators flex flex-dir-column">
-        <button aria-selected="true" class="text-white bg-dark ff-serif fs-600"><span>1</span></button>
-        <button aria-selected="false" class="text-white bg-dark ff-serif fs-600"><span>2</span></button>
-        <button aria-selected="false" class="text-white bg-dark ff-serif fs-600"><span>3</span></button>
-    </div>
+    <div class="number-indicators flex flex-dir-column" role="tablist" aria-label="technology list">
+        <button role="tab" aria-selected="true" aria-controls="vehicle-tab" tabindex="0" data-image="vehicle-image" class="text-white bg-dark ff-serif fs-600"><span>1</span></button>
+        <button role="tab" aria-selected="false" aria-controls="spaceport-tab" tabindex="-1" data-image="spaceport-image" class="text-white bg-dark ff-serif fs-600"><span>2</span></button>
+        <button role="tab" aria-selected="false" aria-controls="capsule-tab" tabindex="-1" data-image="capsule-image" class="text-white bg-dark ff-serif fs-600"><span>3</span></button>
     </div>
 
     <!-- ARTICLES -->
     <!-- launch vehicle -->
     <article
-        class="technology-details flow"
+        class="technology-info flow"
         id="vehicle-tab"
         role="tabpanel"
         tabindex="0"
       >
         <div class="technology-meta">
-          <h2 class="fs-600 ff-serif uppercase">The terminology...</h2>
+          <h2 class="fs-500 ff-serif uppercase">The terminology...</h2>
           <p class="fs-700 uppercase ff-serif">Launch vehicle</p>
         </div>
         <p>
@@ -71,10 +70,11 @@
             it's quite an awe-inspiring sight on the launch pad!
         </p>
       </article>
+      
       <!-- spaceport -->
       <article
         hidden
-        class="technology-details flow"
+        class="technology-info flow"
         id="spaceport-tab"
         role="tabpanel"
         tabindex="-1"
@@ -93,7 +93,7 @@
       <!-- capsule -->
       <article  
         hidden
-        class="technology-details flow"
+        class="technology-info flow"
         id="capsule-tab"
         role="tabpanel"
         tabindex="-1"
@@ -110,19 +110,24 @@
         </p>
       </article>
 
-      <!-- IMAGES -->
+    <!-- IMAGES -->
     <!-- launch vehicle -->
-    <picture id="launch-vehicle-image">
-      <img src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="launch vehicle">
+    <div>
+        <picture id="vehicle-image">
+      <img class="mobile-image" src="./assets/technology/image-launch-vehicle-landscape.jpg" alt="launch vehicle">
+      <img class="desktop-image" src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="launch vehicle">
     </picture>
     <!-- spaceport -->
     <picture hidden id="spaceport-image">
-      <img src="./assets/technology/image-spaceport-landscape.jpg" alt="spaceport">
+      <img class="mobile-image" src="./assets/technology/image-spaceport-landscape.jpg" alt="spaceport">
+      <img class="desktop-image" src="./assets/technology/image-spaceport-portrait.jpg" alt="spaceport">
     </picture>
     <!-- capsule -->
     <picture hidden id="capsule-image">
-      <img src="./assets/technology/image-space-capsule-landscape.jpg" alt="capsule">
+      <img class="mobile-image" src="./assets/technology/image-space-capsule-landscape.jpg" alt="capsule">
+      <img class="desktop-image" src="./assets/technology/image-space-capsule-portrait.jpg" alt="capsule">
     </picture>
+    </div>
   </main>
 </body>
 </html>
