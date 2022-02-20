@@ -463,6 +463,7 @@ body {
 .grid-container--destination > picture {
   grid-area: image;
   max-width: 60%;
+  align-self: start;
 }
 .grid-container--destination > .tab-list {
   grid-area: tabs;
@@ -607,6 +608,20 @@ body {
   .grid-container--crew .crew-details .crew-meta {
     gap: min(6vw, 6rem);
     justify-content: flex-start;
+  }
+}
+.destination {
+  background-image: url(../starter-code/assets/technology/background-technology-mobile.jpg);
+}
+@media (min-width: 35rem) {
+  .destination {
+    background-position: center center;
+    background-image: url(../starter-code/assets/technology/background-technology-tablet.jpg);
+  }
+}
+@media (min-width: 45rem) {
+  .destination {
+    background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
   }
 }
 
