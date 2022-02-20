@@ -10,3 +10,85 @@
         background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
     }
 }
+
+
+.grid-container--technology {
+    gap: 2rem;
+    grid-template-areas: 
+        'title'
+        'image'
+        'tabs'
+        'content'
+    ;
+
+    .numbered-title {
+        grid-area: title;
+    }
+    > picture {
+        grid-area: image;
+        max-width: 60%;
+        align-self: start;
+    }
+    > .tab-list {
+        grid-area: tabs;
+        button {
+            background-color: transparent;
+        }
+    }
+    >.technology-info {
+        grid-area: content;
+    }
+}
+.technology-meta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid hsl(0deg 0% 100% / 10%);
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+
+    p {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 35rem){
+    .numbered-title {
+        justify-self: start;
+        margin-top: 2rem;
+    }
+
+    .technology-meta {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 45rem) {
+    .grid-container--technology {
+        justify-items: start;
+        align-content: center;
+        grid-template-areas:
+            '. title title .'
+            '. image tabs .'
+            '. image content .'
+        ;
+
+        > picture {
+            max-width: 90%;
+        }
+
+        .technology-info {
+            h2 {
+                font-size: 6rem !important;
+            }
+            p {
+                max-width: 28rem;
+            }
+            .technology-meta {
+                gap: min(6vw, 6rem);
+                justify-content: flex-start;
+            }
+        }
+    }
+}
