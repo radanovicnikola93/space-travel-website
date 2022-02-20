@@ -22,23 +22,24 @@
 
     .numbered-title {
         grid-area: title;
+        width: 100%;
+        font-size: 1rem;
     }
 
     > picture {
+        outline: 1px solid green;
         grid-area: image;
-        max-width: 60%;
+        max-width: 100%;
         border-bottom: 1px solid hsl(0deg 0% 100% / 10%);
     }
 
     > .number-indicators {
         grid-area: dots;
+        flex-direction: row;
     }
 
     > .technology-details {
         grid-area: content;
-        h2 {
-            opacity: .5;
-        }
         * {
             margin: 1rem 0;
         }
@@ -46,8 +47,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-top: 2.5rem;
-            margin-top: 2.5rem;
 
             p {
                 font-size: 1.75rem;
@@ -75,9 +74,9 @@
         gap: 2rem;
         grid-template-areas:
             'title'
-            'content'
-            'dots'
             'image'
+            'dots'
+            'content'
         ;
         > picture {
             border: none;
@@ -97,8 +96,8 @@
 @media (min-width: 45rem) {
     .grid-container--technology {
         grid-template-columns: minmax(2rem, 1fr) minmax(5rem, 1fr) minmax(0, 40rem) minmax(0, 50rem);
-        justify-items: start;
-        align-content: center;
+        justify-items: center;
+        align-content: space-around;
         grid-template-areas:
             '. title title .'
             '. dots content image'
@@ -106,16 +105,12 @@
 
         .number-indicators {
             grid-column: 2 !important;
-            outline: 1px solid red;
+            flex-direction: column;
         }
 
         > picture {
             grid-column: 4 !important;
-            position: absolute;
-            right: 0;
-            outline: 1px solid red;
-
-            max-width: 90%;
+            max-width: 100%;
 
             .mobile-image {
                 display: none;
@@ -127,15 +122,17 @@
 
         .technology-details {
             grid-column: 3 !important;
-
-            outline: 1px solid red;
+            align-self: center;
             p {
-                max-width: 28rem;
+                max-width: 30rem;
             }
 
             .technology-meta {
                 gap: min(6vw, 6rem);
                 justify-content: flex-start;
+                > p {
+                    font-size: 3.5rem !important;
+                }
             }
         }
     }
