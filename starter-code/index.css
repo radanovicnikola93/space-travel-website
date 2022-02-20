@@ -610,17 +610,17 @@ body {
     justify-content: flex-start;
   }
 }
-.destination {
+.technology {
   background-image: url(../starter-code/assets/technology/background-technology-mobile.jpg);
 }
 @media (min-width: 35rem) {
-  .destination {
+  .technology {
     background-position: center center;
     background-image: url(../starter-code/assets/technology/background-technology-tablet.jpg);
   }
 }
 @media (min-width: 45rem) {
-  .destination {
+  .technology {
     background-image: url(../starter-code/assets/technology/background-technology-desktop.jpg);
   }
 }
@@ -637,10 +637,10 @@ body {
   max-width: 60%;
   align-self: start;
 }
-.grid-container--technology > .tab-list {
+.grid-container--technology > .number-indicators {
   grid-area: tabs;
 }
-.grid-container--technology > .tab-list button {
+.grid-container--technology > .number-indicators button {
   background-color: transparent;
 }
 .grid-container--technology > .technology-info {
@@ -674,7 +674,7 @@ body {
   .grid-container--technology {
     justify-items: start;
     align-content: center;
-    grid-template-areas: ". title title ." ". image tabs ." ". image content .";
+    grid-template-areas: ". title title ." ". tabs content image .";
   }
   .grid-container--technology > picture {
     max-width: 90%;

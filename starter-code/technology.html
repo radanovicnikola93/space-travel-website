@@ -20,7 +20,7 @@
   <script src="./navigation.js" defer></script>
   <script src="./tabs.js" defer></script>
 </head>
-<body class="bg-dark text-white destination">
+<body class="bg-dark text-white technology">
   <!-- HEADER -->
   <header class="primary-header flex">
     <!-- logo -->
@@ -40,7 +40,7 @@
   </header>
 
   <!-- MAIN -->
-  <main id="main" class="grid-containerxxx grid-container--technology flow">
+  <main id="main" class="grid-container grid-container--technology flow">
     <!-- numbered title -->
     <h1 class="numbered-title"><span aria-hidden="true">03 </span>Space launch 101</h1>
 
@@ -73,6 +73,7 @@
       </article>
       <!-- spaceport -->
       <article
+        hidden
         class="technology-details flow"
         id="spaceport-tab"
         role="tabpanel"
@@ -90,7 +91,8 @@
         </p>
       </article>
       <!-- capsule -->
-      <article
+      <article  
+        hidden
         class="technology-details flow"
         id="capsule-tab"
         role="tabpanel"
