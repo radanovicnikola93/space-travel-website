@@ -1,14 +1,14 @@
 // HOME
 .crew {
-    background-image: url(../starter-code/assets/crew/background-crew-mobile.jpg);
+    background-image: url(../../../starter-code/assets/crew/background-crew-mobile.jpg);
 
     @media (min-width: 35rem) {
         background-position: center center; // making text more readable
-        background-image: url(../starter-code/assets/crew/background-crew-tablet.jpg);
+        background-image: url(../../../starter-code/assets/crew/background-crew-tablet.jpg);
     }
 
     @media (min-width: 45rem) {
-        background-image: url(../starter-code/assets/crew/background-crew-desktop.jpg);
+        background-image: url(../../../starter-code/assets/crew/background-crew-desktop.jpg);
     }
 }
 
