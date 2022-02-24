@@ -1,14 +1,14 @@
 // HOME
 .destination {
-    background-image: url(index.html/assets/destination/background-destination-mobile.jpg);
+    background-image: url(../../assets/destination/background-destination-mobile.jpg);
 
     @media (min-width: 35rem) {
         background-position: center center; // making text more readable
-        background-image: url(index.html/assets/destination/background-destination-tablet.jpg);
+        background-image: url(../../assets/destination/background-destination-tablet.jpg);
     }
 
     @media (min-width: 45rem) {
-        background-image: url(index.html/assets/destination/background-destination-desktop.jpg);
+        background-image: url(../../assets/destination/background-destination-desktop.jpg);
     }
 }
 
