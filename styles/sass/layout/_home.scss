@@ -1,17 +1,17 @@
 // HOME
 .home {
-    background-image: url(./assets/home/background-home-mobile.jpg);
+    background-image: url(index.html/assets/home/background-home-mobile.jpg);
 }
 
 @media (min-width: 35rem) {
     .home {
         background-position: center center; // making text more readable
-        background-image: url(./assets/home/background-home-tablet.jpg);
+        background-image: url(index.html/assets/home/background-home-tablet.jpg);
     }
 }
 
 @media (min-width: 45rem) {
     .home {
-        background-image: url(./assets/home/background-home-desktop.jpg);
+        background-image: url(index.html/assets/home/background-home-desktop.jpg);
     }
 }
